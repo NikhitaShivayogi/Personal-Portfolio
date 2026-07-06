@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Nikhita A Shivayogi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Nikhita A Shivayogi<span class="dot"></span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link active">Home</a>
+        <a href="#about"    class="nav-link">About</a>
+        <a href="#skills"   class="nav-link">Skills</a>
+        <a href="#resume"   class="nav-link">Resume</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact"  class="nav-link">Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+          <i class="fas fa-sun"  id="iconSun"></i>
+          <i class="fas fa-moon" id="iconMoon"></i>
+        </button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HOME ========== -->
+  <section class="section hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-graduation-cap"></i> Fresh Graduate · Open to Opportunities
+      </div>
+      <p class="hero-greeting">Hi there, I'm</p>
+      <h1 class="hero-name">Nikhita A Shivayogi</h1>
+      <h2 class="hero-title"><span id="typed-text"></span><span class="typed-cursor">|</span></h2>
+      <p class="hero-bio">
+        A passionate Computer Science graduate eager to build real-world solutions.
+        I love turning ideas into code and am actively looking for my first role
+        where I can learn, grow, and contribute.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Internships</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-eye"></i> View Projects</a>
+        <a href="#contact"  class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hire Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/NikhitaShivayogi" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nikhitashivayogi/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+         <a href="mailto:nikhitashivayogi3@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-ring">
+        <div class="avatar-placeholder">
+          <img src="images/Nikita.jpeg" alt="Your Name" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        </div>
+      </div>
+      <div class="float-badge badge-1"><i class="fas fa-graduation-cap"></i> Student</div>
+      <div class="float-badge badge-2"><i class="fas fa-laptop-code"></i> Fresher</div>
+      <div class="float-badge badge-3"><i class="fas fa-microchip"></i> Technologist</div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+      
+      </div>
+      <div class="about-layout">
+
+        <!-- LEFT -->
+        <div class="about-left">
+          <div class="about-avatar-wrap">
+            <div class="about-avatar-ring">
+              <div class="about-avatar-placeholder"><img src="images/Nikita.jpeg" alt="Your Name" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" /></div>
+            </div>
+            <div class="about-status">
+              <span class="about-status-dot"></span> Available for Opportunities
+            </div>
+          </div>
+          <div class="about-info-cards">
+            <div class="about-info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><span class="about-info-label">Location</span><span class="about-info-value">Bangalore, Karnataka(Open to relocation)</span></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-envelope"></i>
+              <div><span class="about-info-label">Email</span><span class="about-info-value">nikhitashivayogi3@gmail.com</span></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-university"></i>
+              <div><span class="about-info-label">Degree</span><span class="about-info-value"> Master of Computer Application (MCA) · 2027</span></div>
+            </div>
+            <div class="about-info-card">
+              <i class="fas fa-language"></i>
+              <div><span class="about-info-label">Languages</span><span class="about-info-value">Kannada, English, Hindi</span></div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary btn-full" download>
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-right">
+          <h3 class="about-hello">Hello! I'm <span>Nikhita A Shivayogi</span> 👋</h3>
+          <p class="about-bio">
+           An MCA student focused on turning concepts into working solutions through hands-on projects
+            and internships. I work across multiple technologies to build practical, real-world applications
+             and strengthen my problem-solving skills. I am eager to begin my IT career in an environment 
+             where I can contribute, adapt quickly, and grow with the team
+          </p>
+          <p class="about-bio">
+             I am currently seeking a<strong>Full-time rol</strong> or <strong>Internship</strong> where I can apply my skills, 
+             learn from experienced professionals, and grow as a developer within a collaborative team.
+          </p>
+          <div class="about-stats-row">
+            <div class="about-stat-box">
+              <span class="about-stat-num">6+</span>
+              <span class="about-stat-label">Projects</span>
+            </div>
+            <div class="about-stat-box">
+              <span class="about-stat-num">2</span>
+              <span class="about-stat-label">Internships</span>
+            </div>
+            <div class="about-stat-box">
+              <span class="about-stat-num">200+</span>
+              <span class="about-stat-label">DSA Solved</span>
+            </div>
+            <div class="about-stat-box">
+              <span class="about-stat-num">5+</span>
+              <span class="about-stat-label">Technologies</span>
+            </div>
+          </div>
+          <div class="about-traits">
+            <div class="about-trait">
+              <div class="about-trait-icon"><i class="fas fa-lightbulb"></i></div>
+              <div><h4>Quick Learner</h4><p>Adapt quickly to new technologies, tools, and development workflows through hands-on projects and internships.</p></div>
+            </div>
+            <div class="about-trait">
+              <div class="about-trait-icon"><i class="fas fa-users"></i></div>
+              <div><h4>Team Player</h4><p>Collaborate effectively with peers during projects and internships, valuing clear communication and shared goals.</p></div>
+            </div>
+            <div class="about-trait">
+              <div class="about-trait-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <div><h4>Problem Solver</h4><p>Apply logical thinking and analytical skills to break down problems and implement practical solutions.</p></div>
+            </div>
+            <div class="about-trait">
+              <div class="about-trait-icon"><i class="fas fa-rocket"></i></div>
+              <div><h4>Self Motivated</h4><p>Proactive in learning, building projects, and continuously improving technical skills.</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+       
+        <h2 class="section-title">Technical Skills</h2>
+        
+      </div>
+
+      <div class="skills-section-grid">
+
+         <!-- CS Fundamentals -->
+        <div class="skills-category-card skills-cs-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>CS Fundamentals</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fas fa-sitemap"></i><span>Data Structures</span></div>
+            <div class="skill-pill"><i class="fas fa-sort-amount-up"></i><span>Algorithms</span></div>
+            <div class="skill-pill"><i class="fas fa-cubes"></i><span>OOP</span></div>
+            <div class="skill-pill"><i class="fas fa-table"></i><span>DBMS</span></div>
+            <div class="skill-pill"><i class="fas fa-microchip"></i><span>OS Concepts</span></div>
+            <div class="skill-pill"><i class="fas fa-network-wired"></i><span>Computer Networks</span></div>
+          </div>
+        </div>
+
+       
+
+        <!-- Programming Languages -->
+        <div class="skills-category-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-java"></i><span>Java</span></div>
+            <div class="skill-pill"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="skill-pill"><i class="fas fa-copyright"></i><span>C++</span></div>
+            <div class="skill-pill"><i class="fas fa-code"></i><span>C</span></div>
+            <div class="skill-pill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-pill"><i class="fab fa-php"></i><span>PHP</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend Technologies -->
+        <div class="skills-category-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend Technologies</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-html5"></i><span>HTML5</span></div>
+            <div class="skill-pill"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+            <div class="skill-pill"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+            <div class="skill-pill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+            <div class="skill-pill"><i class="fab fa-react"></i><span>React.js</span></div>
+          </div>
+        </div>
+
+        <!-- Backend Frameworks -->
+        <div class="skills-category-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Frameworks</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-python"></i><span>Django</span></div>
+            <div class="skill-pill"><i class="fab fa-python"></i><span>Flask</span></div>
+            <div class="skill-pill"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+            <div class="skill-pill"><i class="fab fa-java"></i><span>Spring Boot</span></div>
+            <div class="skill-pill"><i class="fas fa-water"></i><span>Streamlit</span></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skills-category-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fas fa-database"></i><span>MySQL</span></div>
+            <div class="skill-pill"><i class="fas fa-database"></i><span>SQLite</span></div>
+            <div class="skill-pill"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+          </div>
+        </div>
+        <!-- AI & Vibe Coding -->
+        <div class="skills-category-card skills-ai-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon skills-cat-icon-ai"><i class="fas fa-robot"></i></div>
+            <h3>AI-Assisted Development Tools <span class="ai-hot-badge">Trending</span></h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-comments"></i><span>ChatGPT</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-bolt"></i><span>Cursor</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-brain"></i><span>Claude</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fab fa-github"></i><span>GitHub Copilot</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fab fa-google"></i><span>Google AI Studio (Gemini)</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-feather-alt"></i><span>Kiro</span></div>
+          </div>
+        </div>
+
+        <!-- AI/ML Skills -->
+        <div class="skills-category-card skills-ai-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon skills-cat-icon-ai"><i class="fas fa-robot"></i></div>
+            <h3>AI / ML Skills <span class="ai-hot-badge">Hot</span></h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-graduation-cap"></i><span>Machine Learning Fundamentals</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-layer-group"></i><span>Deep Learning Basics</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-eye"></i><span>Computer Vision</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-image"></i><span>Image Processing</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-filter"></i><span>Data Preprocessing</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-chart-line"></i><span>Model Training &amp; Evaluation</span></div>
+          </div>
+        </div>
+
+        <!-- AI/ML Libraries -->
+        <div class="skills-category-card skills-ai-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon skills-cat-icon-ai"><i class="fas fa-brain"></i></div>
+            <h3>AI / ML Libraries <span class="ai-hot-badge">Hot</span></h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-calculator"></i><span>NumPy</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-table"></i><span>Pandas</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-chart-bar"></i><span>Matplotlib</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-cogs"></i><span>Scikit-learn</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-network-wired"></i><span>TensorFlow</span></div>
+            <div class="skill-pill skill-pill-ai"><i class="fas fa-eye"></i><span>OpenCV</span></div>
+          </div>
+        </div>
+         <!-- Version Control -->
+        <div class="skills-category-card skills-card-auto">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-code-branch"></i></div>
+            <h3>Version Control</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="skill-pill"><i class="fab fa-github"></i><span>GitHub</span></div>
+          </div>
+        </div>
+
+        <!-- Development Tools -->
+        <div class="skills-category-card">
+          <div class="skills-cat-header">
+            <div class="skills-cat-icon"><i class="fas fa-tools"></i></div>
+            <h3>Development Tools</h3>
+          </div>
+          <div class="skill-pills">
+            <div class="skill-pill"><i class="fas fa-code"></i><span>Visual Studio Code</span></div>
+            <div class="skill-pill"><i class="fas fa-eclipse"></i><span>Eclipse</span></div>
+            <div class="skill-pill"><i class="fas fa-book-open"></i><span>Jupyter Notebook</span></div>
+            <div class="skill-pill"><i class="fab fa-google"></i><span>Google Colab</span></div>
+          </div>
+        </div>
+       
+        </div>
+
+       
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESUME ========== -->
+  <section class="section" id="resume">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Resume</h2>
+      </div>
+
+      <!-- OBJECTIVE -->
+      <div class="resume-block">
+        <h3 class="resume-block-title"><i class="fas fa-bullseye"></i> Objective</h3>
+        <div class="resume-divider"></div>
+        <p class="resume-objective">
+           Entry-level IT professional with hands-on experience in projects and internships, 
+           seeking an opportunity to apply technical skills, solve real-world problems, and grow 
+           within a collaborative and fast-paced technology environment.
+        </p>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="resume-block">
+        <h3 class="resume-block-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+        <div class="resume-divider"></div>
+        <div class="resume-cards-grid">
+          <div class="resume-card">
+            <span class="resume-card-date">2020</span>
+            <h4>Class X</h4>
+            <p class="resume-card-org">Salimath English Medium School, Dharwad</p>
+            <p class="resume-card-detail">Percentage: 74.24%</p>
+          </div>
+          <div class="resume-card">
+            <span class="resume-card-date">2020 – 2022</span>
+            <h4>XII — Science (PCMCS)</h4>
+            <p class="resume-card-org">Shri Guru Chaitanya PU College, Ilkal</p>
+            <p class="resume-card-detail">Percentage: 88%</p>
+          </div>
+          <div class="resume-card">
+            <span class="resume-card-date">2023 – 2025</span>
+            <h4>Bachelor of Computer Application (BCA)</h4>
+            <p class="resume-card-org">ARJ BCA College, Ilkal (Affiliated to Rani Channamma University)</p>
+            <p class="resume-card-detail">CGPA: 9 / 10</p>
+          </div>
+          <div class="resume-card">
+            <span class="resume-card-date">2025 – 2027</span>
+            <h4>Master of Computer Application (MCA)</h4>
+            <p class="resume-card-org">Presidency University, Bangalore</p>
+            <p class="resume-card-detail">CGPA: Ongoing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATES -->
+      <div class="resume-block">
+        <h3 class="resume-block-title"><i class="fas fa-certificate"></i> Certificates</h3>
+        <div class="resume-divider"></div>
+        <div class="resume-cards-grid">
+          <div class="resume-card">
+            <span class="resume-card-date">Jan 2025 – Apr 2025</span>
+            <h4>Full Stack Web Development</h4>
+            <p class="resume-card-org">Udemy · Online</p>
+            <p class="resume-card-detail">
+              <a href="#" class="resume-cert-link" data-cert="images/Certificates/Udemy.jpeg" data-title="Full Stack Web Development — Udemy"><i class="fas fa-eye"></i> View Certificate</a>
+            </p>
+          </div>
+          <div class="resume-card">
+            <span class="resume-card-date">Aug 2025</span>
+            <h4>Introduction to Prompt Engineering for Generative AI</h4>
+            <p class="resume-card-org">LinkedIn Learning</p>
+            <p class="resume-card-detail">
+              <a href="#" class="resume-cert-link" data-cert="images/Certificates/LinkedIn.jpeg" data-title="Prompt Engineering for Generative AI — LinkedIn Learning"><i class="fas fa-eye"></i> View Certificate</a>
+            </p>
+          </div>
+           <div class="resume-card">
+            <span class="resume-card-date">March 2025</span>
+            <h4>Python Programming</h4>
+            <p class="resume-card-org">Reliance Foundation Skilling Academy</p>
+            <p class="resume-card-detail">
+              <a href="#" class="resume-cert-link" data-cert="images/Certificates/Python.jpeg" data-title="Prompt Engineering for Generative AI — LinkedIn Learning"><i class="fas fa-eye"></i> View Certificate</a>
+            </p>
+          </div>
+           <div class="resume-card">
+            <span class="resume-card-date">June 2023- Dec 2023</span>
+            <h4>Office Automation Tools </h4>
+            <p class="resume-card-org">Karnataka School Examination and Assessment Board</p>
+            <p class="resume-card-detail">
+              <a href="#" class="resume-cert-link" data-cert="cert2.jpg" data-title="Prompt Engineering for Generative AI — LinkedIn Learning"><i class="fas fa-eye"></i> View Certificate</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERNSHIP -->
+      <div class="resume-block">
+        <h3 class="resume-block-title"><i class="fas fa-briefcase"></i> Internship</h3>
+        <div class="resume-divider"></div>
+        <div class="resume-cards-grid resume-cards-single">
+          <div class="resume-card">
+            <span class="resume-card-date">Feb 2025 – Apr 2025</span>
+            <h4>Python Full-Stack Web Development Intern</h4>
+            <p class="resume-card-org">Skylix Technologies Pvt. Ltd.</p>
+            <p class="resume-card-detail">Worked on real-world Python web projects using Django and REST APIs. Contributed to frontend development and database management tasks.</p>
+             <p class="resume-card-detail">
+              <a href="#" class="resume-cert-link" data-cert="images/Intern.jpg" data-title="Python Full-Stack Web Development Intern"><i class="fas fa-eye"></i> View Certificate</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-cta">
+        <a href="https://www.linkedin.com/in/nikhitashivayogi" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> More Activities on Linkedin.
+        </a>
+      </div>
+
+      <!-- DOWNLOAD -->  
+      <div class="resume-cta">
+        <a href="Resume/R1.pdf" class="btn btn-primary" target="_blank">
+          <i class="fas fa-file-pdf"></i> View CV
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+       
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">All projects are self-initiated or built during academic coursework and internships.</p>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_01.png" alt="CareerCompass" /></div>
+            <span class="project-badge">Best Project</span>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Django</span><span>Jinja2</span><span>MYSQL</span></div>
+            <h3>CareerCompass</h3>
+            <p> CareerCompass is a dynamic and user friendly web application designed to help the students Discover and apply for the Opportunities relevant to their field of interest </p>
+            <div class="project-links-row">
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_02.png" alt="Face Emotion Detection" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3> Face Emotion Detection </h3>
+            <p>Real-time face emotion detection app using OpenCV and deep learning. Identifies emotions like happiness, sadness, anger, and surprise.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/NikhitaShivayogi/face_emotion_detection"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_03.png" alt="Resume Analyzer" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>React</span></div>
+            <h3> Resume Analyzer</h3>
+            <p>Real-time resume analysis tool that evaluates resumes based on predefined criteria and provides actionable insights.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/NikhitaShivayogi/Resume-Analyzer"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_04.png" alt="E-Commerce UI Clone" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <h3>E-Commerce UI Clone</h3>
+            <p>Pixel-perfect responsive frontend clone of a popular e-commerce site. Focused on layout and CSS animations.</p>
+            <div class="project-links-row">
+              <a href="#"><i class="fab fa-github"></i> Code</a>
+              <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_05.png" alt="StudentFlow — Student Personal Finance Tracker" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>JavaScript</span>
+            <span>XlsxWriter</span><span>REST API </span></div>
+            <h3>StudentFlow — Student Personal Finance Tracker</h3>
+            <p>A full-stack student personal finance tracker built with Flask, MySQL, and JavaScript. 
+              Features income & expense tracking, budget goals, custom date range reports, interactive charts,
+               formatted Excel exports, and a profile management system — all behind a secure login</p>
+            <div class="project-links-row">
+              <a href="#"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+       <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_06.png" alt="Resume Analyzer" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>SQL Injection Detection</span>
+              <span>Password Hashing (PBKDF2)</span></div>
+            <h3>Mini Web Application Firewall (MWAF)</h3>
+            <p>MiniWAF (Sentinel WAF) is a Flask-based web security demonstration platform that 
+              simulates a Web Application Firewall by detecting and blocking common attacks — SQL Injection, XSS, Brute Force, 
+              and Credential Stuffing — in real time, with a live security dashboard to visualize threat logs and login activity.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/NikhitaShivayogi/Mini-Web-Application-Firewall-MWAF-"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+               <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_06.png" alt="Resume Analyzer" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>SQL Injection Detection</span>
+              <span>Password Hashing (PBKDF2)</span></div>
+            <h3>Mini Web Application Firewall (MWAF)</h3>
+            <p>MiniWAF (Sentinel WAF) is a Flask-based web security demonstration platform that 
+              simulates a Web Application Firewall by detecting and blocking common attacks — SQL Injection, XSS, Brute Force, 
+              and Credential Stuffing — in real time, with a live security dashboard to visualize threat logs and login activity.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/NikhitaShivayogi/Mini-Web-Application-Firewall-MWAF-"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+               <div class="project-card">
+          <div class="project-image">
+            <div class="project-img-placeholder"><img src="images/Projects/project_06.png" alt="Resume Analyzer" /></div>
+            <div class="project-overlay">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Python</span><span>Flask</span><span>SQL Injection Detection</span>
+              <span>Password Hashing (PBKDF2)</span></div>
+            <h3>Mini Web Application Firewall (MWAF)</h3>
+            <p>MiniWAF (Sentinel WAF) is a Flask-based web security demonstration platform that 
+              simulates a Web Application Firewall by detecting and blocking common attacks — SQL Injection, XSS, Brute Force, 
+              and Credential Stuffing — in real time, with a live security dashboard to visualize threat logs and login activity.</p>
+            <div class="project-links-row">
+              <a href="https://github.com/NikhitaShivayogi/Mini-Web-Application-Firewall-MWAF-"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="resume-cta">
+        <a href="https://github.com/NikhitaShivayogi" target="_blank" class="btn btn-primary">
+          <i class="fab fa-github"></i> More Projects on GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        
+        <h2 class="section-title">Contact Me</h2>
+       
+        <p class="section-sub">I'm actively looking for opportunities. Let's talk!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:nikhitashivayogi3@gmail.com">nikhitashivayogi3@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/nikhitashivayogi" target="_blank">linkedin.com/in/nikhitashivayogi</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/NikhitaShivayogi" target="_blank">github.com/NikhitaShivayogi</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Location</h4>
+                <span>Bangalore, Karnataka <br>Willing to Relocate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="form-footer">
+            <div class="open-to-work">
+              <div class="otw-dot"></div>
+              <span>Open to Work — Actively seeking full-time &amp; internship roles</span>
+            </div>
+            <p class="contact-intro form-intro">
+              I am an MCA student actively seeking internship and entry-level opportunities in the IT industry.
+              I am motivated to apply my academic knowledge, develop practical skills, and contribute to meaningful
+              projects in a professional environment. I welcome opportunities for internships, entry-level roles,
+              or technical collaborations and would be pleased to connect.
+            </p>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqevwopr" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="_replyto" placeholder="john@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Internship" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about the opportunity or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <strong>Nikhita A Shivayogi</strong></p>
+      <p class="footer-copy">&copy; 2025 · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== CERTIFICATE MODAL ========== -->
+  <div class="cert-modal-overlay" id="certModal">
+    <div class="cert-modal">
+      <div class="cert-modal-header">
+        <h3 id="certModalTitle">Certificate</h3>
+        <button class="cert-modal-close" id="certModalClose" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cert-modal-body">
+        <img src="" alt="Certificate" id="certModalImg" />
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
